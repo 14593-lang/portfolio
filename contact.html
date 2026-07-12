@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Kanit',sans-serif;
+}
+
+body{
+background:linear-gradient(180deg,#DFF5FF,#F2FBFF,#FFFFFF);
+overflow-x:hidden;
+color:#35516A;
+}
+
+/* Cloud */
+
+.cloud{
+position:fixed;
+font-size:70px;
+opacity:.45;
+pointer-events:none;
+animation:cloudMove linear infinite;
+z-index:0;
+}
+
+.c1{top:8%;left:-20%;animation-duration:35s;}
+.c2{top:35%;left:-25%;animation-duration:45s;}
+.c3{top:68%;left:-18%;animation-duration:55s;}
+
+@keyframes cloudMove{
+
+0%{transform:translateX(0);}
+
+100%{transform:translateX(140vw);}
+
+}
+
+/* Menu */
+
+nav{
+
+position:sticky;
+
+top:0;
+
+background:rgba(255,255,255,.82);
+
+backdrop-filter:blur(15px);
+
+padding:18px;
+
+text-align:center;
+
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+z-index:999;
+
+}
+
+nav a{
+
+text-decoration:none;
+
+margin:0 18px;
+
+font-size:18px;
+
+font-weight:600;
+
+color:#56738C;
+
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:#3AA9F5;
+
+}
+
+/* Container */
+
+.container{
+
+max-width:900px;
+
+margin:60px auto;
+
+padding:20px;
+
+}
+
+.card{
+
+background:rgba(255,255,255,.85);
+
+backdrop-filter:blur(18px);
+
+padding:50px;
+
+border-radius:35px;
+
+box-shadow:0 20px 40px rgba(80,160,220,.18);
+
+text-align:center;
+
+}
+/* ========================= */
+/* Profile */
+/* ========================= */
+
+.profile{
+
+text-align:center;
+
+margin-bottom:35px;
+
+}
+
+.profile img{
+
+width:180px;
+
+height:180px;
+
+object-fit:cover;
+
+border-radius:50%;
+
+border:8px solid white;
+
+box-shadow:0 15px 35px rgba(58,169,245,.25);
+
+margin-bottom:20px;
+
+transition:.35s;
+
+}
+
+.profile img:hover{
+
+transform:scale(1.05);
+
+}
+
+.profile h1{
+
+font-size:42px;
+
+color:#2E74B5;
+
+}
+
+.profile p{
+
+font-size:20px;
+
+color:#6A879C;
+
+margin-top:8px;
+
+}
+
+/* Contact */
+
+.contact-box{
+
+margin-top:35px;
+
+display:flex;
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+.item{
+
+background:#F7FCFF;
+
+padding:22px;
+
+border-radius:20px;
+
+box-shadow:0 10px 20px rgba(58,169,245,.12);
+
+font-size:20px;
+
+}
+
+.item b{
+
+color:#2E74B5;
+
+}
+
+.item a{
+
+color:#3AA9F5;
+
+text-decoration:none;
+
+font-weight:600;
+
+}
+
+.item a:hover{
+
+text-decoration:underline;
+
+}
+
+/* Button */
+
+.button-group{
+
+margin-top:40px;
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
+
+.button{
+
+display:inline-block;
+
+padding:15px 35px;
+
+background:linear-gradient(90deg,#63C7FF,#3AA9F5);
+
+color:white;
+
+text-decoration:none;
+
+font-weight:600;
+
+border-radius:40px;
+
+transition:.35s;
+
+}
+
+.button:hover{
+
+transform:translateY(-5px);
+
+box-shadow:0 10px 25px rgba(58,169,245,.25);
+
+}
+
+footer{
+
+margin-top:60px;
+
+padding:25px;
+
+text-align:center;
+
+background:#6EC6FF;
+
+color:white;
+
+}
+
+@media(max-width:768px){
+
+.profile img{
+
+
+width:160px;
+
+height:160px;
+
+}
+
+.profile h1{
+
+font-size:34px;
+
+}
+
+}
+</style>
+</head>
+<body>
+
+<!-- Cloud -->
+
+<span class="cloud c1">☁️</span>
+<span class="cloud c2">☁️</span>
+<span class="cloud c3">☁️</span>
+
+<!-- Menu -->
+
+<nav>
+
+<a href="index.html">🏠 Home</a>
+
+<a href="profile.html">👤 Profile</a>
+
+<a href="education.html">🎓 Education</a>
+
+<a href="award.html">🏆 Awards</a>
+
+<a href="contact.html">📞 Contact</a>
+
+</nav>
+
+<div class="container">
+
+<div class="card">
+
+<div class="profile">
+
+<img src="images/profile.jpg" alt="Profile">
+
+<h1>Contact Me</h1>
+
+<p>ช่องทางการติดต่อ</p>
+
+</div>
+
+<div class="contact-box">
+
+<div class="item">
+
+<b>📧 Email</b><br>
+
+<a href="mailto:kannicha2008pun@gmail.com">
+kannicha2008pun@gmail.com
+</a>
+
+</div>
+
+<div class="item">
+
+<b>📷 Instagram</b><br>
+
+<a href="https://www.instagram.com/nampannn.p" target="_blank">
+@nampannn.p
+</a>
+
+</div>
+
+</div>
+
+<div class="button-group">
+
+<a href="award.html" class="button">← Previous</a>
+
+<a href="index.html" class="button">🏠 Home</a>
+
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+💙 Thank you for visiting my Portfolio 💙
+
+</footer>
+
+</body>
+
+</html>
