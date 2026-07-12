@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Awards | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Kanit',sans-serif;
+}
+
+body{
+background:linear-gradient(180deg,#DFF5FF,#F2FBFF,#FFFFFF);
+overflow-x:hidden;
+color:#35516A;
+}
+
+/* ☁ Cloud */
+
+.cloud{
+position:fixed;
+font-size:70px;
+opacity:.45;
+pointer-events:none;
+animation:cloudMove linear infinite;
+z-index:0;
+}
+
+.c1{top:8%;left:-20%;animation-duration:35s;}
+.c2{top:35%;left:-25%;animation-duration:45s;}
+.c3{top:68%;left:-18%;animation-duration:55s;}
+
+@keyframes cloudMove{
+0%{transform:translateX(0);}
+100%{transform:translateX(140vw);}
+}
+
+/* Menu */
+
+nav{
+position:sticky;
+top:0;
+background:rgba(255,255,255,.82);
+backdrop-filter:blur(15px);
+padding:18px;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+z-index:999;
+}
+
+nav a{
+text-decoration:none;
+margin:0 18px;
+font-size:18px;
+font-weight:600;
+color:#56738C;
+transition:.3s;
+}
+
+nav a:hover{
+color:#3AA9F5;
+}
+
+/* Container */
+
+.container{
+max-width:1100px;
+margin:60px auto;
+padding:20px;
+}
+
+.card{
+background:rgba(255,255,255,.85);
+backdrop-filter:blur(18px);
+border-radius:35px;
+padding:50px;
+box-shadow:0 20px 40px rgba(80,160,220,.18);
+}
