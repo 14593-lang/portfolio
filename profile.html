@@ -1,1 +1,431 @@
+<!DOCTYPE html>
+<html lang="th">
 
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Profile | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Kanit',sans-serif;
+}
+
+body{
+background:linear-gradient(180deg,#DFF4FF,#EDF9FF,#FFFFFF);
+overflow-x:hidden;
+color:#35516A;
+}
+
+/* เมฆ */
+
+.cloud{
+position:fixed;
+font-size:70px;
+opacity:.45;
+animation:cloud 40s linear infinite;
+pointer-events:none;
+z-index:0;
+}
+
+.c1{top:5%;left:-20%;animation-duration:35s;}
+.c2{top:30%;left:-25%;animation-duration:45s;}
+.c3{top:65%;left:-18%;animation-duration:55s;}
+
+@keyframes cloud{
+
+0%{transform:translateX(0);}
+
+100%{transform:translateX(140vw);}
+
+}
+
+/* เมนู */
+
+nav{
+
+position:sticky;
+
+top:0;
+
+background:rgba(255,255,255,.75);
+
+backdrop-filter:blur(15px);
+
+padding:18px;
+
+text-align:center;
+
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+z-index:999;
+
+}
+
+nav a{
+
+text-decoration:none;
+
+margin:0 18px;
+
+font-size:18px;
+
+font-weight:600;
+
+color:#4E6F89;
+
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:#3AA9F5;
+
+}
+
+/* กล่อง */
+
+.container{
+
+max-width:1100px;
+
+margin:60px auto;
+
+padding:20px;
+
+  
+}
+
+.card{
+
+background:rgba(255,255,255,.82);
+
+backdrop-filter:blur(18px);
+
+border-radius:35px;
+
+padding:50px;
+
+box-shadow:0 20px 40px rgba(80,160,220,.18);
+
+}
+  /* หัวข้อ */
+
+.title{
+
+text-align:center;
+
+margin-bottom:45px;
+
+}
+
+.title h1{
+
+font-size:52px;
+
+color:#2E74B5;
+
+margin-bottom:10px;
+
+}
+
+.title p{
+
+font-size:20px;
+
+color:#6A879C;
+
+}
+
+.line{
+
+width:150px;
+
+height:5px;
+
+background:#6EC6FF;
+
+margin:20px auto;
+
+border-radius:30px;
+
+}
+
+/* โปรไฟล์ */
+
+.profile{
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+gap:50px;
+
+flex-wrap:wrap;
+
+}
+
+.profile img{
+
+width:280px;
+
+height:280px;
+
+object-fit:cover;
+
+border-radius:50%;
+
+border:8px solid white;
+
+box-shadow:0 15px 35px rgba(80,160,220,.25);
+
+transition:.4s;
+
+}
+
+.profile img:hover{
+
+transform:scale(1.05);
+
+}
+
+.info{
+
+flex:1;
+
+min-width:320px;
+
+}
+
+.info h2{
+
+font-size:42px;
+
+color:#2E74B5;
+
+margin-bottom:10px;
+
+}
+
+.info h3{
+
+font-size:24px;
+
+font-weight:400;
+
+color:#6A879C;
+
+margin-bottom:25px;
+
+}
+
+.detail{
+
+background:#F4FBFF;
+
+padding:18px 25px;
+
+margin:15px 0;
+
+border-radius:18px;
+
+font-size:19px;
+
+box-shadow:0 5px 12px rgba(80,160,220,.10);
+
+}
+
+.detail b{
+
+color:#3AA9F5;
+
+}
+
+/* ปุ่ม */
+
+.button-group{
+
+margin-top:40px;
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
+
+.button{
+
+display:inline-block;
+
+padding:15px 35px;
+
+background:linear-gradient(90deg,#6EC6FF,#3AA9F5);
+
+color:white;
+
+text-decoration:none;
+
+font-weight:600;
+
+border-radius:40px;
+
+transition:.3s;
+
+box-shadow:0 10px 20px rgba(58,169,245,.25);
+
+}
+
+.button:hover{
+
+transform:translateY(-5px);
+
+}
+
+footer{
+
+margin-top:60px;
+
+padding:25px;
+
+text-align:center;
+
+background:#6EC6FF;
+
+color:white;
+
+}
+
+@media(max-width:900px){
+
+.profile{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.profile img{
+
+width:220px;
+
+height:220px;
+
+}
+
+.info h2{
+
+font-size:34px;
+
+}
+
+}
+  
+</style>
+
+</head>
+
+<body>
+
+<!-- เมฆ -->
+
+<span class="cloud c1">☁️</span>
+<span class="cloud c2">☁️</span>
+<span class="cloud c3">☁️</span>
+
+<!-- เมนู -->
+
+<nav>
+
+<a href="index.html">🏠 Home</a>
+
+<a href="profile.html">👤 Profile</a>
+
+<a href="education.html">🎓 Education</a>
+
+<a href="award.html">🏆 Awards</a>
+
+<a href="contact.html">📞 Contact</a>
+
+</nav>
+
+<div class="container">
+
+<div class="card">
+
+<div class="title">
+
+<h1>👤 My Profile</h1>
+
+<p>ประวัติส่วนตัว</p>
+
+<div class="line"></div>
+
+</div>
+
+<div class="profile">
+
+<img src="images/profile.jpg" alt="Profile">
+
+<div class="info">
+
+<h2>กานต์ณิชา แซ่เอี๊ยบ</h2>
+
+<h3>ชื่อเล่น : น้ำปั่น</h3>
+
+<div class="detail">
+<b>🎂 วันเกิด :</b> 15 มิถุนายน 2551
+</div>
+
+<div class="detail">
+<b>🎈 อายุ :</b> 18 ปี
+</div>
+
+<div class="detail">
+<b>🏫 โรงเรียน :</b> โรงเรียนพานทอง
+</div>
+
+<div class="detail">
+<b>💙 ความใฝ่ฝัน :</b> มุ่งมั่นพัฒนาตนเองและศึกษาต่อในระดับมหาวิทยาลัย
+</div>
+
+</div>
+
+</div>
+
+<div class="button-group">
+
+<a href="index.html" class="button">🏠 Home</a>
+
+<a href="education.html" class="button">Next →</a>
+
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+💙 Portfolio | KANNICHA SAE-IAB 💙
+
+</footer>
+
+</body>
+
+</html>
