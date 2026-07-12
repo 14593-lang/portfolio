@@ -86,3 +86,300 @@ border-radius:35px;
 padding:50px;
 box-shadow:0 20px 40px rgba(80,160,220,.18);
 }
+  /* ========================= */
+/* Profile */
+/* ========================= */
+
+.profile-top{
+
+text-align:center;
+
+margin-bottom:40px;
+
+}
+
+.profile-top img{
+
+width:180px;
+
+height:180px;
+
+object-fit:cover;
+
+border-radius:50%;
+
+border:8px solid white;
+
+box-shadow:0 15px 35px rgba(58,169,245,.25);
+
+transition:.35s;
+
+}
+
+.profile-top img:hover{
+
+transform:scale(1.05);
+
+}
+
+.profile-top h1{
+
+margin-top:20px;
+
+font-size:45px;
+
+color:#2E74B5;
+
+}
+
+.profile-top p{
+
+margin-top:8px;
+
+font-size:20px;
+
+color:#6A879C;
+
+}
+
+/* ========================= */
+/* Award Card */
+/* ========================= */
+
+.award-card{
+
+max-width:700px;
+
+margin:40px auto;
+
+background:#F7FCFF;
+
+border-radius:25px;
+
+padding:25px;
+
+box-shadow:0 15px 35px rgba(58,169,245,.12);
+
+transition:.35s;
+
+text-align:center;
+
+}
+
+.award-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.award-card img{
+
+width:100%;
+
+border-radius:18px;
+
+margin-bottom:20px;
+
+}
+
+.award-card h2{
+
+font-size:28px;
+
+color:#2E74B5;
+
+margin-bottom:15px;
+
+}
+
+.award-card p{
+
+font-size:19px;
+
+line-height:34px;
+
+color:#566E84;
+
+}
+
+/* ========================= */
+/* Button */
+/* ========================= */
+
+.button-group{
+
+display:flex;
+
+justify-content:space-between;
+
+margin-top:45px;
+
+flex-wrap:wrap;
+
+gap:20px;
+
+}
+
+.button{
+
+display:inline-block;
+
+padding:15px 35px;
+
+background:linear-gradient(90deg,#63C7FF,#3AA9F5);
+
+color:white;
+
+text-decoration:none;
+
+font-weight:600;
+
+border-radius:40px;
+
+transition:.35s;
+
+}
+
+.button:hover{
+
+transform:translateY(-5px);
+
+box-shadow:0 10px 25px rgba(58,169,245,.25);
+
+}
+
+footer{
+
+margin-top:60px;
+
+padding:25px;
+
+text-align:center;
+
+background:#6EC6FF;
+
+color:white;
+
+}
+
+@media(max-width:768px){
+
+.profile-top img{
+
+width:160px;
+
+height:160px;
+
+}
+
+.profile-top h1{
+
+font-size:36px;
+
+}
+
+.button-group{
+
+justify-content:center;
+
+}
+
+}
+
+</style>
+  </head>
+
+<body>
+
+<!-- ☁ Cloud -->
+
+<span class="cloud c1">☁️</span>
+<span class="cloud c2">☁️</span>
+<span class="cloud c3">☁️</span>
+
+<!-- Menu -->
+
+<nav>
+
+<a href="index.html">🏠 Home</a>
+
+<a href="profile.html">👤 Profile</a>
+
+<a href="education.html">🎓 Education</a>
+
+<a href="award.html">🏆 Awards</a>
+
+<a href="contact.html">📞 Contact</a>
+
+</nav>
+
+<div class="container">
+
+<div class="card">
+
+<!-- Profile -->
+
+<div class="profile-top">
+
+<img src="images/profile.jpg" alt="Profile">
+
+<h1>Awards</h1>
+
+<p>เกียรติบัตรและความภาคภูมิใจ</p>
+
+</div>
+
+<!-- Award -->
+
+<div class="award-card">
+
+<img src="images/certificate.jpg" alt="Certificate">
+<h2>🏆 เกียรติบัตรเข้าร่วมกิจกรรม</h2>
+
+<p>
+
+ได้รับเกียรติบัตรจาก
+
+<b>องค์การบริหารส่วนจังหวัดชลบุรี</b>
+
+เนื่องในโครงการ
+
+<b>มหกรรมเด็กและเยาวชนจังหวัดชลบุรี ประจำปี 2568</b>
+
+ภายใต้กิจกรรม
+
+<b>"อบจ.ชลบุรี เปิดพื้นที่สร้างสรรค์ ร่วมแบ่งปันกิจกรรมสร้างสุข"</b>
+
+<br><br>
+
+📅 วันที่ 28 สิงหาคม พ.ศ. 2568
+
+</p>
+
+
+</div>
+
+<!-- Button -->
+
+<div class="button-group">
+
+<a href="education.html" class="button">← Previous</a>
+
+<a href="contact.html" class="button">Next →</a>
+
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+💙 Portfolio | Kannicha Saeeiub 💙
+
+</footer>
+
+</body>
+
+</html>
+ 
