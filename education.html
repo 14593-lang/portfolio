@@ -1,1 +1,433 @@
+<!DOCTYPE html>
+<html lang="th">
 
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Education | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Kanit',sans-serif;
+}
+
+body{
+
+background:linear-gradient(180deg,#DFF4FF,#EEF9FF,#FFFFFF);
+
+overflow-x:hidden;
+
+color:#35516A;
+
+}
+
+/* เมฆ */
+
+.cloud{
+
+position:fixed;
+
+font-size:70px;
+
+opacity:.45;
+
+animation:cloud 40s linear infinite;
+
+pointer-events:none;
+
+z-index:0;
+
+}
+
+.c1{top:8%;left:-20%;animation-duration:35s;}
+.c2{top:35%;left:-25%;animation-duration:48s;}
+.c3{top:70%;left:-20%;animation-duration:55s;}
+
+@keyframes cloud{
+
+0%{transform:translateX(0);}
+
+100%{transform:translateX(140vw);}
+
+}
+
+/* เมนู */
+
+nav{
+
+position:sticky;
+
+top:0;
+
+background:rgba(255,255,255,.8);
+
+backdrop-filter:blur(12px);
+
+padding:18px;
+
+text-align:center;
+
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+z-index:999;
+
+}
+
+nav a{
+
+text-decoration:none;
+
+margin:0 18px;
+
+font-size:18px;
+
+font-weight:600;
+
+color:#4E6F89;
+
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:#3AA9F5;
+
+}
+
+/* กล่องหลัก */
+
+.container{
+
+max-width:1100px;
+
+margin:60px auto;
+
+padding:20px;
+
+}
+
+.card{
+
+background:rgba(255,255,255,.82);
+
+backdrop-filter:blur(18px);
+
+border-radius:35px;
+
+padding:50px;
+
+box-shadow:0 20px 40px rgba(80,160,220,.18);
+
+}
+  /* ========================= */
+/* Profile Top */
+/* ========================= */
+
+.profile-top{
+
+text-align:center;
+
+margin-bottom:45px;
+
+}
+
+.profile-top img{
+
+width:200px;
+
+height:200px;
+
+object-fit:cover;
+
+border-radius:50%;
+
+border:8px solid #FFFFFF;
+
+box-shadow:0 15px 35px rgba(58,169,245,.25);
+
+transition:.35s;
+
+}
+
+.profile-top img:hover{
+
+transform:scale(1.05);
+
+}
+
+.profile-top h1{
+
+margin-top:20px;
+
+font-size:42px;
+
+color:#2E74B5;
+
+}
+
+.profile-top p{
+
+font-size:20px;
+
+color:#6A879C;
+
+margin-top:8px;
+
+}
+
+/* ========================= */
+/* Education Box */
+/* ========================= */
+
+.education{
+
+margin-top:40px;
+
+display:grid;
+
+gap:25px;
+
+}
+
+.edu-card{
+
+background:#F7FCFF;
+
+padding:30px;
+
+border-radius:25px;
+
+box-shadow:0 10px 25px rgba(58,169,245,.10);
+
+border-left:8px solid #6EC6FF;
+
+transition:.35s;
+
+}
+
+.edu-card:hover{
+
+transform:translateY(-6px);
+
+}
+
+.edu-card h2{
+
+color:#2E74B5;
+
+margin-bottom:15px;
+
+font-size:28px;
+
+}
+
+.edu-card p{
+
+font-size:19px;
+
+line-height:35px;
+
+color:#566E84;
+
+}
+
+/* ========================= */
+/* Button */
+/* ========================= */
+
+.button-group{
+
+margin-top:45px;
+
+display:flex;
+
+justify-content:space-between;
+
+flex-wrap:wrap;
+
+gap:20px;
+
+}
+
+.button{
+
+display:inline-block;
+
+padding:15px 35px;
+
+background:linear-gradient(90deg,#63C7FF,#3AA9F5);
+
+color:white;
+
+text-decoration:none;
+
+font-size:18px;
+
+font-weight:600;
+
+border-radius:40px;
+
+transition:.35s;
+
+}
+
+.button:hover{
+
+transform:translateY(-5px);
+
+box-shadow:0 10px 25px rgba(58,169,245,.25);
+
+}
+
+footer{
+
+margin-top:60px;
+
+padding:25px;
+
+text-align:center;
+
+background:#6EC6FF;
+
+color:white;
+
+}
+
+@media(max-width:768px){
+
+.button-group{
+
+justify-content:center;
+
+}
+
+.profile-top img{
+
+width:170px;
+
+height:170px;
+
+}
+
+.profile-top h1{
+
+font-size:34px;
+
+}
+
+}
+
+</style>
+  </head>
+
+<body>
+
+<!-- ☁ Cloud -->
+
+<span class="cloud c1">☁️</span>
+<span class="cloud c2">☁️</span>
+<span class="cloud c3">☁️</span>
+
+<!-- Menu -->
+
+<nav>
+
+<a href="index.html">🏠 Home</a>
+
+<a href="profile.html">👤 Profile</a>
+
+<a href="education.html">🎓 Education</a>
+
+<a href="award.html">🏆 Awards</a>
+
+<a href="contact.html">📞 Contact</a>
+
+</nav>
+
+<div class="container">
+
+<div class="card">
+
+<!-- รูปโปรไฟล์ -->
+
+<div class="profile-top">
+
+<img src="images/profile.jpg" alt="Profile">
+
+<h1>Education</h1>
+
+<p>ประวัติการศึกษา</p>
+
+</div>
+
+<!-- การศึกษา -->
+
+<div class="education">
+
+<div class="edu-card">
+
+<h2>📚 มัธยมศึกษาตอนต้น</h2>
+
+<p>
+
+<b>โรงเรียน :</b> โรงเรียนพานทอง
+
+<br><br>
+
+<b>แผนการเรียน :</b> ศิลป์ - ภาษา
+
+</p>
+
+</div>
+
+<div class="edu-card">
+
+<h2>🎓 มัธยมศึกษาตอนปลาย</h2>
+
+<p>
+
+<b>โรงเรียน :</b> โรงเรียนพานทอง
+
+<br><br>
+
+<b>แผนการเรียน :</b> อังกฤษ - จีน
+
+</p>
+
+</div>
+
+</div>
+
+<!-- ปุ่ม -->
+
+<div class="button-group">
+
+<a href="profile.html" class="button">← Previous</a>
+
+<a href="award.html" class="button">Next →</a>
+
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+💙 Portfolio | Kannicha Saeeiub 💙
+
+</footer>
+
+</body>
+
+</html>
+  
